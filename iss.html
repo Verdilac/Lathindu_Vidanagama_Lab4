@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Real time Location of the ISS</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <h1>Real time Location of the ISS</h1>
+
+    <h2>Group Set 4 - New Group 2</h2>
+    <h3>Done by Lathindu Pahasara Vidanagama Welhenage</h3>
+    <br>
+
+    <div>
+        <h2>Latitude</h3>
+        <h3 id="latitudeReading"></h4>
+    </div>
+    <br>
+
+    <div>
+        <h2>Longitude</h3>
+        <h3 id="longitudeReading"></h4>
+    </div>
+    <br>
+
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+
+        var map = L.map('map').setView([10, 10], 2);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+    </script>
+
+</body>
+
+</html>

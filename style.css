@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(95, 95, 95);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h3,
+h4 {
+    color: rgb(52, 52, 52);
+}
+
+#map {
+    height: 600px; 
+}
